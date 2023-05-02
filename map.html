@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+<link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+<style>
+    body{
+        background-image: url(https://i.redd.it/tddy4990hfk61.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;} 
+        
+        
+        #map {
+            justify-content: center;
+            align-items: center;
+            margin-left: 10%;
+        }
+
+        #navul {
+            position: absolute;
+            margin-left: 30%;
+            display: inline-flex;
+            list-style: none;
+            color: burlywood;
+            text-decoration: none;
+        }
+        li :hover {
+           color: #ff2562;
+           transition: 2s;
+           letter-spacing: 4px;
+        }
+
+
+        
+        li {
+            padding-left: 15px;
+            text-decoration: none;
+        }
+        #logo {
+            width: 200px;
+        }
+        h1{
+            font-size: 30px;
+            color: tomato;
+            text-align: center;
+            margin-left: 4%;
+        }
+
+        p1 {
+            font-weight: bold;
+            color: white;
+        }
+
+        p2{
+            font-style: italic;
+            color: white;
+        }
+        div{
+            margin-top: 4%;
+        }
+
+       .study {
+           color: red;
+       }
+       .work {
+           color: brown;
+       }
+
+        
+    </style>
+</head>
+<body>
+   
+    <section class="site">
+<header>
+   <ul id="navul">
+       <li><a>Home</a></li>
+       <li><a href="https://www.google.com/search?q=fortaleza+brazil&sxsrf=AOaemvL5ANUBM6ttmRqdnWGFGVaSfjX_Fg%3A1642269386360&source=hp&ei=ygrjYeTZEc6q_Qad2JzABQ&iflsig=ALs-wAMAAAAAYeMY2sh7bO394S_7gYcuWLdhn4zk7hFG&ved=0ahUKEwjk5pSbqrT1AhVOVd8KHR0sB1gQ4dUDCAc&uact=5&oq=fortaleza+brazil&gs_lcp=Cgdnd3Mtd2l6EAMyBQguEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBOgQIIxAnOgoILhDHARDRAxBDOgUILhCABDoFCAAQgAQ6CwguEIAEEMcBEKMCOgQILhAnOgQIABBDOgQILhBDOgsILhCABBDHARDRAzoLCC4QgAQQxwEQrwE6CwguEMcBEK8BEMsBUABYtTdg9DhoAnAAeACAAaMBiAHFEZIBBDAuMTiYAQCgAQE&sclient=gws-wiz">About me</a></li>
+       <li class="rafael"><a href="https://www.youtube.com/@rafitodavids">Rafael</a></li>
+       <li class="calendar"><a href="map.html">mapquest</a></li>
+       <li>PLEASE, CLICK IN EACH LINK </li>
+   </ul>
+   <img id="logo" src="logo.png" alt="">
+    
+</header>
+
+
+
+    <script type="text/javascript">
+      window.onload = function() {
+        L.mapquest.key = '4ANa4mvWqRRxONlD2eApja50pqGG02TQ';
+
+        var map = L.mapquest.map('map', {
+          center: [45.4885376,-73.5772672],
+          layers: L.mapquest.tileLayer('map'),
+          zoom: 12
+        });
+
+        map.addControl(L.mapquest.control());
+      }
+    
+
+
+    $.getJSON("https://ipapi.co/json/", function(data) { // AJAX request
+    let country = data.country; // User's country name
+    if (country == "CA"){ // For Canada
+    location.replace("canada.html");
+    } else if (country == "US") {
+    location.replace("usa.html"); // For USA
+    }
+    else {
+    alert("You are not from CANADA nor USA") // For all other countries
+    }
+    });
+    </script>
+    
+  </head>
+
+  <body style="border: 0; margin: 0;"><h1>Click on the GPS button to see your location PLEASE</h1>
+    <div id="map" style="width: 80%; height: 490px;">
+    </div>
+  </body>
+</html>
