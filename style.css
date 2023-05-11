@@ -364,6 +364,8 @@ margin: 10px;
 border: 3px;
 
 
+
+
 }
 .One{
 height:500px;}
@@ -409,6 +411,7 @@ border: 3px;
 color: aliceblue;
 
 
+
 }
 .One2{
 height:500px;}
@@ -443,10 +446,11 @@ height: 500px;
 
 .only {
 text-align: center;
-font-size: 30px;
+font-size: 50px;
 color: aliceblue;
 margin-top: 20px;
 margin-bottom: 15px;
+margin: 60px;
 }
 
 .wapper3 {
@@ -519,14 +523,14 @@ margin-top: 30px;
 width: 80px;
 height: 80px;
 padding:10px;
-margin: 20px;
+margin: 40px;
 margin-left: 20px;
 
 }
 .three3 li {
 padding: 10px;
 padding-left: 30px;
-}
+}   
 .three3 nav{
 list-style: none;
 display: flex;
