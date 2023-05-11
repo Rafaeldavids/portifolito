@@ -362,8 +362,6 @@ margin: 10px;
     
 .wrapper div {
 border: 3px;
-border-color: orange;
-border-style: groove;
 
 
 }
@@ -409,8 +407,6 @@ grid-template-columns: 400px 750px 400px;
 .wapper2 div {
 border: 3px;
 color: aliceblue;
-border-color: orange;
-border-style: groove;
 
 
 }
@@ -461,8 +457,7 @@ margin-left: 50px;
 .wapper3 div {
 border: 3px;
 color: aliceblue;
-border-color: orange;
-border-style: groove;
+
 height: 400px;
 
 
@@ -617,8 +612,7 @@ margin-left: 50px;
 .wapper4 div {
 border: 3px;
 color: aliceblue;
-border-color: orange;
-border-style: groove;
+
 height: fit-content;
 max-width: 1400px;
 
