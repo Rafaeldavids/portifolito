@@ -1,5 +1,8 @@
- *{ margin: 0px;
+*{ margin: 0px;
     padding: 0px;}
+    html {
+        scroll-behavior: smooth;
+    }
     body{
         background-color: rgb(34, 33, 33);
         justify-content: center;
@@ -13,6 +16,12 @@
         
 
     }
+
+    main div{
+        border-color: aqua;
+        border-style: groove;
+
+    }
     #header {
         display: flex;
         justify-content: space-between;
@@ -23,36 +32,58 @@
         justify-content: space-between;
         text-align: center;
     }
+    #navli li {
+        text-decoration: none;
+        
+    }
+    #navli a{
+        text-decoration: none;
+    }
 
-
+    #navli p{
+        text-decoration: none;
+    }
     @media screen and (max-width: 1230px){
         #One4 {
             align-items: center;
             text-align: center;
         }
-        #One4 nav{
+        #One4 nav ul{
+            display: block;
             align-items: center;
             text-align: center;
             
         }
-    #navete li img {width: 50vw;
-            height: 300px;
+        #One4 li {
+            width: 88vw;
+            height: 40vw;
+            padding: 10px;
+        }
+        #One4 li :hover {
+            cursor: pointer;
+            padding: 20px;
+            width: 90vw;
+            height: 40vw;
+            transition: 1s;
+        }
+       
+    #One4 nav ul li img {width: 88vw;
+            height: 40vw;
+            padding: 10px;
             
         
         text-align: center;
     }
-    #navete {
-        display: block;
-    }
+    
     #navada{
-        display: inline-table;
+        /*display: block; /**/
         text-align: center;
         justify-content: center;
         
         
     }
     #navada2{
-        display: inline-table;
+        
         text-align: center;
         justify-content: center;
         
@@ -106,6 +137,14 @@ grid-template-columns: 400px 750px 400px;
 }
 
 @media screen and (max-width:800px) {
+
+    #One3 {
+        height: 300px;
+    }
+    #three3 {
+        height: 400px;
+    }
+   
     
     #checkbtn{
         display: block;
@@ -184,6 +223,7 @@ grid-template-columns: 400px 750px 400px;
         align-self: center;
         margin-left: 100px;
         width: 100vw;
+        height: 630px;
         justify-content: space-between;
     }
     #One3 li {
@@ -195,6 +235,9 @@ grid-template-columns: 400px 750px 400px;
         height: 0px;
         width: 0px;
     }
+    #three {
+
+    }
 
     #three3 li {
        margin-left: 12vw;
@@ -203,6 +246,9 @@ grid-template-columns: 400px 750px 400px;
     #wapper4 {
         display: block;
         margin-left: 5px;
+    }
+    #One3 {
+        height: 230px;
     }
     .One3 nav{
         list-style: none;
@@ -240,9 +286,7 @@ grid-template-columns: 400px 750px 400px;
         text-align: center;
         
     }
-    #form{
-        margin-left: 20px;
-    }
+    
     #caixa{
         margin-left: 60px;
     }
@@ -254,7 +298,7 @@ grid-template-columns: 400px 750px 400px;
         align-items: center;
         justify-self: center;
         align-self: center;
-        margin-left: 100px;
+        
         justify-content: center;
     }
 }
@@ -264,18 +308,30 @@ grid-template-columns: 400px 750px 400px;
     *{
         transition: 1s;
     }
+    #One3 {
+        height: 300px;
+    }
+    #three3 {
+        height: 500px;
+    }
     #wapper3 img {
         width: 100vw;
     }
     #One3 div {
         width: 10vw;
+        padding: 15vw;
+        margin-left: 0px;
+        margin-right: 3vw;
+    }
+    #One3 nav {
+        justify-content: space-evenly;
     }
     #three3 div  {
-        width: 13vw;
+        width: 16vw;
         padding: 3px;
     }
     #html h1 {
-        font-size: 2vw  ;
+        font-size: 0.5vw  ;
     }
     #One3 h1 {
         text-align: center;
@@ -297,6 +353,11 @@ grid-template-columns: 400px 750px 400px;
         
         justify-content: center;
     }
+    #Two3 {
+        border: 2px;
+        border-color: aqua;
+        border-style: double;
+    }
     #One3 li {
         margin-left: 3vw;
     }
@@ -307,8 +368,28 @@ grid-template-columns: 400px 750px 400px;
     #form {
         margin-left: 7vw;
     }
+    #One4 li :hover {
+        cursor: pointer;
+        
+        border-radius: 30px;
+       
+        transition: 1s;
+    }
+    #One4 li img {
+        padding: 1px;
+    }
     }
     @media screen and (max-width:1440px) {
+
+
+
+        #caixa {
+            margin-left: 30vw;
+        }
+        
+        #form {
+            margin-left: 7vw;
+        }
 
 
         #wrapper {
@@ -357,6 +438,12 @@ margin: 10px;
         #wapper4 li img { padding: 2vw;
             
            
+        }
+       
+    }
+    @media screen and (min-width:1310px) {
+        #popup-image img {
+            width: 50%;
         }
     }
     
@@ -414,9 +501,9 @@ color: aliceblue;
 
 }
 .One2{
-height:500px;}
+height:800px;}
 .Two2 {
-height: 500px;
+height: 800px;
 color: aliceblue;
 text-align: center  ;
 justify-content: center;
@@ -462,9 +549,12 @@ margin-left: 50px;
 border: 3px;
 color: aliceblue;
 
-height: 400px;
+height: 600px;
 
 
+}
+#wapper3 p {
+    text-align: center;
 }
 .One3 div {
 width: 80px;
@@ -473,6 +563,11 @@ padding:10px;
 margin: 20px;
 margin-left: 20px;
 
+}
+
+.One3 li div :hover {
+    padding: 40px;
+   transition: 1s;
 }
 .One3 li {
 padding: 10px;
@@ -538,6 +633,7 @@ display: flex;
 .three3 h1 {
     text-align: center;
 }
+
 .photoshop{
 background-color: rgb(2, 2, 52);
 
@@ -569,11 +665,11 @@ border-radius: 15px;
 
 }
 
-.premierepro{background-image: url(Adobe_Premiere_Pro_CC_icon.svg.png);
+.premierepro{background-image: url(krita.png);
 background-size: cover;
 background-position: center;
 text-align: center;
-border-radius: 15px;
+border-radius: 10px;
 
 }
 
@@ -600,6 +696,7 @@ text-align: center;
 border-radius: 15px;
 
 }
+
 
 
 .sonyvegas {
@@ -631,26 +728,72 @@ height: 220px;
 padding:60px;
 border-radius: 5vw;
 z-index: 10;
-
-
-
 }
-#One4 img :hover{
-    width: 400px;
+
+.popup-image{
+    position: fixed;
+    top: 0;left: 0;
+    background-color: rgba(0, 0,0, 10);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.popup-image span {
+    position: absolute;
+    top: 0;right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: aliceblue;
     cursor: pointer;
+    z-index: 110;
 }
-.One4 li :hover {
-    width: 400px;
+.popup-image img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    text-align: center;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    border-radius: 15px;
+    width: 80%;
+    height: auto;
+}
+@media screen and (min-width:1050px) {
+    .popup-image img {
+        width: 60%;
+    }
+    
+}
+@media screen and (min-width:1231px) {
+    #One4 li :hover {
+    cursor: pointer;
+    padding: 20px;
+    width: 420px;
+    height: 290px;
+    transition: 1s;
+}
+#three3  li:hover div {
+    cursor: pointer;
+    width: 90px;
+    height: 85px;
+    padding: 30px;
+    
+    transition: 1s;    
+}
+}
 
 
-}
-.One4 nav{
+#One4 nav{
 list-style: none;
-display: flex;
+
 }
-#One4 nav :hover {
-    cursor: pointer;
+.One4 nav ul {
+    list-style: none;
+    display: flex;
 }
+
 
 
 .form{
