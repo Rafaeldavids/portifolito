@@ -28,15 +28,15 @@
         <nav class="navli" id="navli">
            <ul>
             <div>
-            <li>Home</li></div>
-            <div>
-            <li>About me</li></div>
-            <div>
-            <li>Skills</li></div>
-            <div>
-            <li>Projects</li></div>
-            <div>
-            <li>Contract</li></div></ul>
+            <li><p>Home</p></li></div>
+            <div><a href="#wapper2">
+            <li><p>About me</p></li></a></div>
+            <div><a href="#wapper3">
+            <li><p>Skills</p></li></a></div>
+            <div><a href="#wapper4">
+            <li><p>Projects</p></li></a></div>
+            <div><a href="#form">
+            <li><p>Contacts</p></li></a></div></ul>
         </nav></div>
     </header>
     <main>
@@ -51,7 +51,7 @@
          </div>
          <div class="wapper2" id="wapper2">
             <div class="One2">One</div>
-            <div class="Two2"><h1>About Me</h1>
+            <div class="Two2" id="Two2"><h1>About Me</h1>
                 <P>My name is Rafael Davids I am a Web developer. Although my whole background was maded of arts and sports,  I decided to study web design to work in the area that i love.<br>
                      I am gratuated in the CDI College and ready to work in my dream.</P>
             </div>
@@ -86,23 +86,30 @@
             </div>
             <div class="three3" id="three3">
                 <h1 id="design">Design</h1>
-                <nav>
+                <nav id="navola">
                     <li>
                         <div class="photoshop">
                             <h1>Ps</h1>
                             
                         </div>
+                        <p>Photoshop</p>
                     </li>
                     <li>
                         <div class="sonyvegas">
 
                         </div>
+                        <p>
+                            Sonyvegas
+                        </p>
                     </li>
                     <li>
                         <div class="blender">
                             
 
                         </div>
+                        <p>
+                            Blender
+                        </p>
                     </li>
                 </nav>
                 <nav>
@@ -112,16 +119,25 @@
                             
                             
                         </div>
+                        <p>
+                            Afterefects
+                        </p>
                     </li>
                     <li>
                         <div class="premierepro">
 
                         </div>
+                        <p>
+                            Krita
+                        </p>
                     </li>
                     <li>
                         <div class="illustrator">
 
                         </div>
+                        <p>
+                            illustrator
+                        </p>
                     </li>
                 </nav>
             </div>
@@ -130,10 +146,11 @@
             <div class="wapper4"
             id="wapper4">
                 <div class="One4" id="One4">
-                    <nav id="navete">
+                    <nav id="navete" class="navete">
+                        <ul>
                         <li>
                             
-                                <img src="pepsi.png" id="pepsifoto" alt="">
+                                <img src="pepsi.png" class="image" id="pepsifoto" alt="">
                             
                         </li>
                         <li>
@@ -142,39 +159,42 @@
                         <li>
                             <img src="starbucms.png" alt="">
                         </li>
+                    </ul></nav>
+                    <nav id="navada" class="navada" >
+                        <ul>
+                        <li >
+                            
+                                <img src="project color.png"  alt="">
+                            
+                        </li>
+                        <li >
+                            <img src="beco.png" alt="">
+                        </li>
+                        <li >
+                            <img src="bequete.png" alt="" >
+                        </li>
                     </nav>
-                    <nav id="navada" >
+                    <nav id="navada2" class="navada2"><ul>
                         <li >
                             
-                                <img src="project color.png" onclick="fullview()" alt="">
+                                <img src="20211116_132752.jpg"  alt="">
                             
                         </li>
                         <li >
-                            <img src="beco.png" alt="" onclick="fullview(this.src)">
-                        </li>
-                        <li >
-                            <img src="bequete.png" alt="" onclick="fullview()">
-                        </li>
-                    </nav>
-                    <nav id="navada2">
-                        <li onclick="fullview()">
-                            
-                                <img src="20211116_132752.jpg" onclick="fullview()" alt="">
-                            
-                        </li>
-                        <li onclick="fullview()">
-                            <img src="20211117_153208.jpg" onclick="fullview()" alt="">
+                            <img src="20211117_153208.jpg" alt="">
                         </li>
                         <li>
-                            <img src="20220130_091011.jpg" onclick="fullview()" alt="">
+                            <img src="20220130_091011.jpg" >
                         </li>
-                    </nav>
+                   </ul> </nav>
                 </div>
             </div>
           
-            <div id="FullImageView">
-                <img id="FullImage" >
-            </div>
+           <div class="popup-image" id="popup-image">
+            <span id="spanoide">&times;</span>
+                <img src="blender.png" alt="">
+           
+           </div>
             
             <div class="form" id="form"> <div class="caixa" id="caixa">
                 <form action="https://formspree.io/f/mlekzdqg" method="post">
@@ -188,9 +208,14 @@
 
         <script>
 
-            function fullview(ImgLink){
-                document.getElementById('FullImage').src = ImgLink;
-                document.getElementById("FullImageView").style.display = "block"
+            document.querySelectorAll('.One4 img').forEach(image =>
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+
+            })
+            document.getElementById("spanoide").onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'none';
             }
             
             function clickmenu(){
