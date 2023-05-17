@@ -17,6 +17,9 @@
     </style >
 </head>
 <body>
+    <video autoplay muted loop  class="video-bg" >
+        <source src="bove.mp4" type="video/mp4">
+    </video>
     <header>
         <div id="header">
             <div>
@@ -58,7 +61,7 @@
             <div class="three2" id="">Three</div>
 
          </div>
-         <div class="only">My skills</div>
+         <div class="only">MY SKILLS</div>
          <div class="wapper3"
          id="wapper3">
             <div class="One3" id="One3">
@@ -85,7 +88,7 @@
 
             </div>
             <div class="three3" id="three3">
-                <h1 id="design">Design</h1>
+                <h1 id="design">DESIGN</h1>
                 <nav id="navola">
                     <li>
                         <div class="photoshop">
@@ -142,10 +145,11 @@
                 </nav>
             </div>
             </div>
-            <div class="only">My Works</div> 
+            <div class="only">MY WORKS</div> 
             <div class="wapper4"
             id="wapper4">
                 <div class="One4" id="One4">
+                    <h1>WEB PAGES</h1>
                     <nav id="navete" class="navete">
                         <ul>
                         <li>
@@ -160,6 +164,7 @@
                             <img src="starbucms.png" alt="">
                         </li>
                     </ul></nav>
+                    <h1>DESIGN</h1>
                     <nav id="navada" class="navada" >
                         <ul>
                         <li >
@@ -195,6 +200,11 @@
                 <img src="blender.png" alt="">
            
            </div>
+           <div class="popup-image2" id="popup-image2">
+            <span id="spanoide2">&times;</span>
+                <img src="blender.png" alt="">
+           
+           </div>
             
             <div class="form" id="form"> <div class="caixa" id="caixa">
                 <form action="https://formspree.io/f/mlekzdqg" method="post">
@@ -208,15 +218,35 @@
 
         <script>
 
-            document.querySelectorAll('.One4 img').forEach(image =>
+            document.querySelectorAll('.navete img').forEach(image =>
             image.onclick = () =>{
                 document.querySelector('.popup-image').style.display = 'block';
                 document.querySelector('.popup-image img').src = image.getAttribute('src');
 
             })
+            
+            
             document.getElementById("spanoide").onclick = () =>{
                 document.querySelector('.popup-image').style.display = 'none';
             }
+            document.querySelectorAll('.navada img').forEach(image =>
+            image.onclick = () =>{
+                document.querySelector('.popup-image2').style.display = 'block';
+                document.querySelector('.popup-image2 img').src = image.getAttribute('src');
+                
+
+            })
+            document.getElementById("spanoide2").onclick = () =>{
+                document.querySelector('.popup-image2').style.display = 'none';
+            }
+            document.querySelectorAll('.navada2 img').forEach(image =>
+            image.onclick = () =>{
+                document.querySelector('.popup-image2').style.display = 'block';
+                document.querySelector('.popup-image2 img').src = image.getAttribute('src');
+
+            })
+            document.getElementById("spanoide2").onclick = () =>{
+                document.querySelector('.popup-image2').style.display = 'none';}
             
             function clickmenu(){
                if (navli.style.display == 'block'){
