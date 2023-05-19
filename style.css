@@ -4,9 +4,10 @@
         scroll-behavior: smooth;
     }
     body{
-        background-color: black;
+        background-image: url(backgo.jpg);
         justify-content: center;
         overflow-x: hidden;
+        margin: auto;
         
     }
      header{
@@ -18,8 +19,9 @@
         
 
     }
+    /* 2560 x 1440*/
     .backgroundvideo {
-        position: absolute;
+        position: sticky;
         right: 0;
         bottom: 0;
         min-width: 100%;
@@ -65,6 +67,76 @@
     #navli p{
         text-decoration: none;
     }
+
+    @media screen and (min-width:1520px ) { 
+
+        
+    }
+    @media screen and (min-width:1620px ) {
+        #wrapper {
+            grid-template-columns: 20vw 60vw 20vw;
+        }
+        #wapper2 {
+            grid-template-columns: 20vw 60vw 20vw;
+        }
+        #wapper3 {
+            grid-template-columns: 39vw 19vw 39vw;
+        }
+
+
+        #One3 div {
+            padding: 42px;
+        }
+        .One3 nav {
+            margin-left: 5vw;
+        }
+        
+
+        .One3 li {
+            padding-left: 100px;
+        }
+        #three3 div {
+            padding: 1.5vw;
+        }
+        #One4 {
+            justify-content: center;
+            text-align: center;
+        }
+        #One4 li {
+            
+            text-align: center;
+        }
+        
+        #One4 img {
+            width: 22vw;
+            height: 20vw;
+            
+            }
+        .One4 h1 {
+            text-align: center;
+        }
+        .One4 li {
+            margin-left: 3vw;
+            
+        }
+        .One4 nav {
+            text-align: center;
+            justify-content: center;
+            margin-left: 3vw;
+        }
+        #form {
+            margin-left: 45%;
+            margin-right: 0;
+        }
+       #caixa {
+        margin-left: 0px;
+       }
+
+
+    }
+
+
+
     @media screen and (max-width: 1230px){
         #One4 {
             align-items: center;
@@ -314,14 +386,7 @@ grid-template-columns: 400px 750px 400px;
     }
     #form{
         
-        margin-left: 5vw;
-        text-align: center;
-        
-        align-items: center;
-        justify-self: center;
-        align-self: center;
-        
-        justify-content: center;
+       
     }
 }
 @media screen and (max-width: 650px) {
@@ -390,7 +455,7 @@ grid-template-columns: 400px 750px 400px;
         margin-left: 1vw;
     }
     #form {
-        margin-left: 2vw;
+        margin-left: 20%;
     }
     #One4 li :hover {
         cursor: pointer;
@@ -407,13 +472,7 @@ grid-template-columns: 400px 750px 400px;
 
 
 
-        #caixa {
-            margin-left: 30vw;
-        }
         
-        #form {
-            margin-left: 7vw;
-        }
 
 
         #wrapper {
@@ -447,7 +506,7 @@ margin: 10px;
         }
         #three3 div{
             width: 7vw;
-            padding: 1vw;
+            
             margin: 1vw;
             margin-left: 0px;
         }
@@ -736,7 +795,7 @@ border: 3px;
 color: aliceblue;
 
 height: fit-content;
-max-width: 1400px;
+
 
 
 }
@@ -746,7 +805,7 @@ max-width: 1400px;
     font-size: 7vw;
     
 }
-#One4 img {
+.One4 img {
 width: 350px;
 height: 220px;
 padding:60px;
@@ -856,12 +915,14 @@ list-style: none;
     list-style: none;
     display: flex;
 }
+#design {
+    text-align: center;
+}
 
 
 
 .form{
-                margin-left: 2vw;
-                margin-right: 50px;
+                margin-left: 40%;
                 display: block;
                 height:300px ;
                width: 300px;
