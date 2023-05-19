@@ -384,7 +384,8 @@ grid-template-columns: 400px 750px 400px;
     #caixa{
         margin-left: 60px;
     }
-    #form{
+    .form{
+        margin-left: 20%;
         
        
     }
