@@ -284,7 +284,12 @@ grid-template-columns: 400px 750px 400px;
     }
 }
 
-
+@media screen and (min-width:901px) {
+    .form {
+        margin-left: 40%;
+    }
+    
+}
 @media screen and (max-width:900px) {
     * {
         transition: 0.5s;
@@ -923,7 +928,7 @@ list-style: none;
 
 
 .form{
-                margin-left: 40%;
+                
                 display: block;
                 height:300px ;
                width: 300px;
