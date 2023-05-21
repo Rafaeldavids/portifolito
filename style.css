@@ -294,6 +294,7 @@ grid-template-columns: 400px 750px 400px;
     * {
         transition: 0.5s;
     }
+   
     .wrapper{
         display: block;
     }
@@ -401,6 +402,7 @@ grid-template-columns: 400px 750px 400px;
     *{
         transition: 1s;
     }
+    
     #One3 {
         height: 300px;
     }
@@ -480,6 +482,14 @@ grid-template-columns: 400px 750px 400px;
     @media screen and (max-width:475px){
         #three3 li {
             padding-left: 0px;
+        }
+        .form {
+            margin-left: 1px;
+        }
+        #form input {
+            font-size: 0,5em;
+                    padding: 5px 5px;
+            
         }
     }
 
