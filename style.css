@@ -338,7 +338,7 @@ grid-template-columns: 400px 750px 400px;
 
     }
 
-    #three3 li {
+    .three3 li {
        margin-left: 12vw;
     }
     
@@ -407,6 +407,10 @@ grid-template-columns: 400px 750px 400px;
     #three3 {
         height: 500px;
     }
+    .three3 li {
+        padding: 1px;
+    }
+
     #wapper3 img {
         width: 100vw;
     }
@@ -453,7 +457,7 @@ grid-template-columns: 400px 750px 400px;
     #One3 li {
         margin-left: 3vw;
     }
-    #Three3 li {
+    .Three3 li {
         margin-left: 3vw;
     }
 
@@ -473,6 +477,12 @@ grid-template-columns: 400px 750px 400px;
     #One4 li img {
         padding: 1px;
     }
+    @media screen and (max-width:475px){
+        #three3 li {
+            padding-left: 0px;
+        }
+    }
+
     }
     @media screen and (max-width:1440px) {
 
@@ -720,12 +730,14 @@ display: flex;
     text-align: center;
 }
 
-.photoshop{
-background-color: rgb(2, 2, 52);
-
-text-align: center;
-border-radius: 30px;
-}   
+.photoshop{background-image: url(photoshop.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border-radius: 15px;
+    
+    }
+ 
 .photoshop h1{
 color: rgb(19, 227, 193);
 margin-top: 4px;
