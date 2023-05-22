@@ -47,6 +47,7 @@
 
     }
     #header {
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -648,6 +649,14 @@ margin-top: 20px;
 margin-bottom: 15px;
 margin: 60px;
 }
+.only1 {
+    text-align: center;
+font-size: 12vw;
+color: aliceblue;
+margin-top: 20px;
+margin-bottom: 15px;
+margin: 60px;
+}
 
 .wapper3 {
 display: grid;
@@ -947,7 +956,10 @@ list-style: none;
     text-align: center;
 }
 
-
+footer {
+    background-color: purple;
+    height: fit-content;
+}
 
 .form{
                 
@@ -985,6 +997,7 @@ list-style: none;
                 padding-right: 20px ;
             }
             textarea {
+                columns: ;
                 border-radius: 10px;
             }
                
