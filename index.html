@@ -6,7 +6,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+                
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <style>
@@ -23,7 +24,7 @@
     <header>
         <div id="header">
             <div>
-                <img src="lofo draw.jpg" id="logo" alt="">
+                <img src="Logo.gif" id="logo" alt="">
             </div>
             <span class="material-symbols-outlined" id="checkbtn" onclick="clickmenu()">menu     </span>
                 
@@ -44,7 +45,9 @@
     </header>
     <main>
         <div class="wrapper" id="wrapper">
-            <div class="One" id="One"></div>
+            <div class="One" id="One">
+                <img class="gif" src="logo.gif" alt="">
+            </div>
             <div class="Two"><h1>Hi, name is Rafael</h1>
                 <p>This is my portifolio</p>
             <button class="button">See my Work</button>
@@ -225,12 +228,12 @@
 </footer>
         <script>
 
-            document.querySelectorAll('.navete img').forEach(image =>
-            image.onclick = () =>{
-                document.querySelector('.popup-image').style.display = 'block';
-                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            //document.querySelectorAll('.navete img').forEach(image =>
+            //image.onclick = () =>{
+              //  document.querySelector('.popup-image').style.display = 'block';
+                //document.querySelector('.popup-image img').src = image.getAttribute('src');
 
-            })
+//            })
             
             
             document.getElementById("spanoide").onclick = () =>{
