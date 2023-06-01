@@ -20,16 +20,17 @@
         position: fixed;
         top: 0;
         justify-content: space-between;
+        z-index: 10000000000;
         
 
     }
 
     .gif {
-        margin-top: 200px;
-        width: 40%;
+        
+        width: 20%;
         height: auto;
         z-index: 10;
-        border-radius: 35px;
+        border-radius: 55px;
     }
     .imagola {
         margin: 0px;
@@ -63,7 +64,7 @@
 
     }
     #header {
-        width: max-content;
+        
         display: flex;
         justify-content: space-between;
     }
@@ -308,9 +309,9 @@ grid-template-columns: 400px 750px 400px;
 @media screen and (min-width:901px) {
     
     .Two h1{
-       
+       margin-top: 150px;
         
-        font-size: 9rem;
+        font-size: 4vw;
     }
 .Two p {
         padding: 10px;
@@ -318,7 +319,7 @@ grid-template-columns: 400px 750px 400px;
     }
     .Two2 h1{
         
-        font-size: 9rem;
+        font-size: 7rem;
     }
 .Two2 p {
         padding: 10px;
@@ -332,13 +333,18 @@ grid-template-columns: 400px 750px 400px;
     * {
         transition: 0.5s;
     }
+    
     .Two h1{
-        
+            margin-top: 160px;
                 font-size: 50px;
             }
         .Two p {
                 padding: 10px;
                 font-size: 2rem;
+            }
+            .Two2{
+                margin: 50px;
+                padding: auto;
             }
    
             .Two2 h1 {
@@ -347,7 +353,7 @@ grid-template-columns: 400px 750px 400px;
                 }
                 
                 .Two2 p{
-                font-size: 2rem;
+                font-size: 3vw;
                 }
     .wrapper{
         display: block;
@@ -441,14 +447,7 @@ grid-template-columns: 400px 750px 400px;
         
     }
     
-    #caixa{
-        margin-left: 60px;
-    }
-    .form{
-        margin-left: 20%;
-        
-       
-    }
+    
 }
 @media screen and (max-width: 650px) {
 
@@ -482,6 +481,9 @@ grid-template-columns: 400px 750px 400px;
     #three3 div  {
         width: 16vw;
         padding: 3px;
+    }
+    #three3 li {
+        margin-left: 4vw;
     }
     #html h1 {
         font-size: 0.5vw  ;
@@ -517,12 +519,7 @@ grid-template-columns: 400px 750px 400px;
         margin-left: 3vw;
     }
 
-    #caixa {
-        margin-left: 1vw;
-    }
-    #form {
-        margin-left: 20%;
-    }
+   
     #One4 li :hover {
         cursor: pointer;
         
@@ -537,9 +534,7 @@ grid-template-columns: 400px 750px 400px;
         #three3 li {
             padding-left: 0px;
         }
-        .form {
-            margin-left: 1px;
-        }
+        
         #form input {
             font-size: 0,5em;
                     padding: 5px 5px;
@@ -585,7 +580,7 @@ margin: 10px;
 
         }
         #three3 div{
-            width: 7vw;
+            
             
             margin: 1vw;
             margin-left: 0px;
@@ -624,13 +619,13 @@ height: 700px;
 color: aliceblue;
 text-align: center  ;
 justify-content: center;
-justify-items: center;   
-
+justify-items: center;
+z-index: 5;
 }
 .Two h1{
-margin-top: 200px;
-      
+
     }
+
 .Two p {
         padding: 10px;
       
@@ -677,9 +672,7 @@ justify-items: center;
     .One2{
         height: 0px;
     }
-    form {
-        width: 10%;
-    }
+    
     
 }
 .Two2 h1 {
@@ -1018,15 +1011,15 @@ list-style: none;
 }
 
 footer {
-    background-color: purple;
-    height: fit-content;
-    width: max-content;
+    
 }
 
 .form{
                width: 100%;
                max-width: 500px;
                margin: auto;
+               border-radius: 35px;
+               
             }
             .form  form{
                 display: flex;
@@ -1047,11 +1040,11 @@ footer {
             }
             .button2 {
                 background-color: orangered;
-                padding: 10px;
+                padding: 20px;
                 border-radius: 50px;
                 color: white;
                 text-align: center;
-                margin-left: 100px;
+                
                 cursor: pointer;
                 margin-top: 10px;
                 margin-bottom: 20px;
@@ -1063,3 +1056,31 @@ footer {
                 border-radius: 10px;
             }
                
+
+@keyframes slideInLeft{
+    from {
+        transform: translate(-500px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes slide-down{
+    from {
+
+    }
+}
+
+header{
+    animation: slideInLeft,ease-in-out;
+}
+
+.two{ 
+animation:slideInLeft,ease-in-out ;
+animation-duration: 1.5s;
+animation-delay: 1s;
+animation-iteration-count:1 ;
+animation-direction: reverse;
+animation-fill-mode:forwards ;}
