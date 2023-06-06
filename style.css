@@ -5,6 +5,7 @@
         scroll-behavior: smooth;
     }
     body{
+        
         background-image: url(backgo.jpg);
         justify-content: center;
         overflow-x: hidden;
@@ -78,7 +79,8 @@
         text-decoration: none;
         
     }
-    #navli a{
+    #navli a{ 
+        color: black;
         text-decoration: none;
     }
 
@@ -243,6 +245,8 @@ justify-content: space-around;
         
     }
     .wrapper {
+        background-image: url(Fortaleza.jpg);
+        background-size: cover;
 display: grid;
 grid-template-columns: 400px 750px 400px;
 
@@ -335,7 +339,7 @@ grid-template-columns: 400px 750px 400px;
     }
     
     .Two h1{
-            margin-top: 160px;
+            margin-top: 100px;
                 font-size: 50px;
             }
         .Two p {
@@ -367,6 +371,9 @@ grid-template-columns: 400px 750px 400px;
     }
     #wapper2{
         display: block;
+    }
+    #Two2 {
+        height: 400px;
     }
 
     
@@ -708,6 +715,7 @@ margin: 60px;
 }
 
 .wapper3 {
+    background-image: ;
 display: grid;
 grid-template-columns: 600px 200px 600px;
 margin-left: 50px;

@@ -14,14 +14,22 @@
         #header img{
             border-radius: 60px;
             width: 5.5vw;
+            padding: 0px;
         }
+        @media screen and (max-width:800px) {
+   #header img {
+    width: 9vw;
+   }
+    
+    
+}
     </style >
 </head>
 <body>
     <!--<video autoplay muted loop  class="video-bg" >
         <source src="bove.mp4" type="video/mp4">
     </video>-->
-    <header>
+    <header >
         <div id="header">
             <div>
                 <img src="lofo draw.jpg" id="logo" alt="">
@@ -56,12 +64,12 @@
             
          </div>
          <div class="wapper2" id="wapper2">
-            <div class="One2">One</div>
+            <div class="One2"></div>
             <div class="Two2" id="Two2"><h1>About Me</h1>
                 <P>My name is Rafael Davids I am a Web developer. Although my whole background was maded of arts and sports,  I decided to study web design to work in the area that i love.<br>
                      I am gratuated in the CDI College and ready to work in my dream.</P>
             </div>
-            <div class="three2" id="">Three</div>
+            <div class="three2" id=""></div>
 
          </div>
          <div class="only">MY SKILLS</div>
@@ -241,6 +249,7 @@
             }
             document.querySelectorAll('.navada img').forEach(image =>
             image.onclick = () =>{
+                document.querySelector('header').style.display = 'none'
                 document.querySelector('.popup-image2').style.display = 'block';
                 document.querySelector('.popup-image2 img').src = image.getAttribute('src');
                 
@@ -248,14 +257,17 @@
             })
             document.getElementById("spanoide2").onclick = () =>{
                 document.querySelector('.popup-image2').style.display = 'none';
+                document.querySelector('header').style.display = 'fixed'
             }
             document.querySelectorAll('.navada2 img').forEach(image =>
             image.onclick = () =>{
+                document.querySelector('header').style.display = 'none'
                 document.querySelector('.popup-image2').style.display = 'block';
                 document.querySelector('.popup-image2 img').src = image.getAttribute('src');
 
             })
             document.getElementById("spanoide2").onclick = () =>{
+                document.querySelector('header').style.display = 'fixed'
                 document.querySelector('.popup-image2').style.display = 'none';}
             
             function clickmenu(){
