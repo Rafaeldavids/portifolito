@@ -328,6 +328,9 @@ justify-content: space-around;
         font-size: 42px;
         
     }
+    .three3 li {
+        margin-left: 12vw;
+    }
     
     
 }
@@ -407,7 +410,7 @@ justify-content: space-around;
 
     .three3 li {
         text-align: center;
-       margin-left: 17vw;
+       
     }
 
     #junsao {
