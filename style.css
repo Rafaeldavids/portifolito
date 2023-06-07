@@ -6,7 +6,6 @@
     }
     body{
         
-        background-image: url(backgo.jpg);
         justify-content: center;
         overflow-x: hidden;
         margin: auto;
@@ -244,13 +243,7 @@ justify-content: space-around;
         cursor: pointer;
         
     }
-    .wrapper {
-        background-image: url(Fortaleza.jpg);
-        background-size: cover;
-display: grid;
-grid-template-columns: 400px 750px 400px;
 
-}
 
 @media screen and (max-width:800px) {
     header {
@@ -312,6 +305,7 @@ grid-template-columns: 400px 750px 400px;
 
 @media screen and (min-width:901px) {
     
+   
     .Two h1{
        margin-top: 150px;
         
@@ -321,11 +315,15 @@ grid-template-columns: 400px 750px 400px;
         padding: 10px;
         font-size: 56px;
     }
+    .two2 {
+        height: auto;
+    }
     .Two2 h1{
         
         font-size: 7rem;
     }
 .Two2 p {
+    padding-inline: 152px;
         padding: 10px;
         font-size: 42px;
         
@@ -346,8 +344,14 @@ grid-template-columns: 400px 750px 400px;
                 padding: 10px;
                 font-size: 2rem;
             }
-            .Two2{
-                margin: 50px;
+            .wapper2{
+                height: 750px;
+            }
+            .two2{
+                height: 750px;
+            }
+            .Two2 p{
+               
                 padding: auto;
             }
    
@@ -365,16 +369,11 @@ grid-template-columns: 400px 750px 400px;
     #One {width: 0px;
     height: 0px;}
 
-    .wapper2{
-        display: block;
+   
         
     }
-    #wapper2{
-        display: block;
-    }
-    #Two2 {
-        height: 400px;
-    }
+   
+    
 
     
     .wapper3{
@@ -389,8 +388,8 @@ grid-template-columns: 400px 750px 400px;
         justify-self: center;
         align-self: center;
         margin-left: 100px;
-        width: 100vw;
-        height: 630px;
+        
+        height: auto;
         justify-content: space-between;
     }
     #One3 li {
@@ -407,7 +406,12 @@ grid-template-columns: 400px 750px 400px;
     }
 
     .three3 li {
-       margin-left: 12vw;
+        text-align: center;
+       margin-left: 17vw;
+    }
+
+    #junsao {
+        text-align: center;
     }
     
     #wapper4 {
@@ -455,7 +459,7 @@ grid-template-columns: 400px 750px 400px;
     }
     
     
-}
+
 @media screen and (max-width: 650px) {
 
 
@@ -505,7 +509,7 @@ grid-template-columns: 400px 750px 400px;
     }
     #wapper3 {
         display: block;
-        margin-left: 14vw;
+        
         text-align: center;
         
         align-items: center;
@@ -611,18 +615,28 @@ margin: 10px;
             width: 50%;
         }
     }
+    .wrapper {
+        background-image: url(Fortaleza.jpg);
+        background-size: cover;
+display: grid;
+grid-template-columns: 400px 750px 400px;
+height: 99vw;
+
+
+}
     
 .wrapper div {
 border: 3px;
-
-
+padding-top: 90px;
+height: 99vw;
 
 
 }
 .One{
-height:700px;}
+}
 .Two {
-height: 700px;
+    
+
 color: aliceblue;
 text-align: center  ;
 justify-content: center;
@@ -655,6 +669,8 @@ height: 500px;
 }
 
 .wapper2 {
+    background-image: url(backgo.jpg);
+    background-size:cover ;
 display: grid;
 grid-template-columns: 400px 750px 400px;
 }
@@ -664,11 +680,12 @@ color: aliceblue;
 
 
 
+
 }
 .One2{
 height:800px;}
 .Two2 {
-height: 800px;
+
 color: aliceblue;
 text-align: center  ;
 justify-content: center;
@@ -684,7 +701,7 @@ justify-items: center;
 }
 .Two2 h1 {
 
-margin-top: 50px;
+
 margin-bottom: 30px;
 }
 
@@ -696,26 +713,39 @@ text-align: center;
 
 height: 500px;
 }
+#onlyskil {
+    
+}
+.wrapperonly {
+                
+background:url(lencois.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
 
 .only {
+   
 text-align: center;
 font-size: 15vw;
 color: aliceblue;
-margin-top: 20px;
-margin-bottom: 15px;
-margin: 60px;
+padding: 70px;
 }
 .only1 {
     text-align: center;
 font-size: 12vw;
 color: aliceblue;
-margin-top: 20px;
+
 margin-bottom: 15px;
-margin: 60px;
+
+}
+.only2{
+    background-image:url(balckgo.jpg) ;
+    background-size: cover;
 }
 
 .wapper3 {
-    background-image: ;
+   height: auto;
 display: grid;
 grid-template-columns: 600px 200px 600px;
 margin-left: 50px;
@@ -724,7 +754,7 @@ margin-left: 50px;
 border: 3px;
 color: aliceblue;
 
-height: 600px;
+height: auto;
 
 
 }
@@ -880,6 +910,7 @@ background-position: center;
 border-radius: 15px;
 }
 .wapper4 {
+    
 display: grid;
 margin-left: 50px;
 
@@ -1012,13 +1043,16 @@ list-style: none;
 #progaming {
     text-align: center;
     font-size: 44px;
+    padding: 40px;
 }
 #design {
     font-size: 44px;
     text-align: center;
+    padding: 40px;
 }
 
 footer {
+  
     
 }
 
@@ -1062,6 +1096,10 @@ footer {
             textarea {
                 columns: ;
                 border-radius: 10px;
+            }
+            .footerback{
+                background-image: url(balckgo.jpg);
+                background-size: cover;
             }
                
 
