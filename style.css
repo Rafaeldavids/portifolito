@@ -5,8 +5,8 @@
         scroll-behavior: smooth;
     }
     body{
+       
         
-        justify-content: center;
         overflow-x: hidden;
         margin: auto;
         font-family: 'Poppins',sans-serif;
@@ -93,6 +93,7 @@
     }
     @media screen and (min-width:1620px ) {
         #wrapper {
+            height: 1200px;
             grid-template-columns: 20% 60% 20%;
         }
         #wapper2 {
@@ -307,7 +308,7 @@ justify-content: space-around;
     
    
     .Two h1{
-       margin-top: 150px;
+       padding-top: 150px;
         
         font-size: 4vw;
     }
@@ -366,7 +367,11 @@ justify-content: space-around;
                 .Two2 p{
                 font-size: 3vw;
                 }
+                #three3 li {
+                    margin-left: 7vw;
+                }
     .wrapper{
+       
         display: block;
     }
     #One {width: 0px;
@@ -448,6 +453,7 @@ justify-content: space-around;
     #navete {
         display: block;
     }
+    
     #navada{
         display: inline-table;
         text-align: center;
@@ -621,9 +627,10 @@ margin: 10px;
     .wrapper {
         background-image: url(Fortaleza.jpg);
         background-size: cover;
+        background-position: center;
 display: grid;
 grid-template-columns: 400px 750px 400px;
-height: 99vw;
+height: 900px;
 
 
 }
@@ -631,7 +638,7 @@ height: 99vw;
 .wrapper div {
 border: 3px;
 padding-top: 90px;
-height: 99vw;
+height: auto
 
 
 }
@@ -668,12 +675,13 @@ cursor: pointer;
 
 .Three{
 
-height: 500px;
+
 }
 
 .wapper2 {
-    background-image: url(backgo.jpg);
+    background-image: url(toalhas.jpg);
     background-size:cover ;
+    background-position: center;
 display: grid;
 grid-template-columns: 400px 750px 400px;
 }
@@ -702,15 +710,18 @@ justify-items: center;
     
     
 }
-.Two2 h1 {
+ h1 {
 
 
 margin-bottom: 30px;
 }
-
+.Two2 h1 {
+    padding-top: 80px;
+}
 .Two2 p{
 align-items: center;
 text-align: center;
+padding-bottom: 40px;
 }
 .Three2{
 
@@ -743,7 +754,7 @@ margin-bottom: 15px;
 
 }
 .only2{
-    background-image:url(balckgo.jpg) ;
+    background-image:url(lencois.jpg) ;
     background-size: cover;
 }
 
@@ -752,6 +763,7 @@ margin-bottom: 15px;
 display: grid;
 grid-template-columns: 600px 200px 600px;
 margin-left: 50px;
+padding-bottom: 60px;
 }
 .wapper3 div {
 border: 3px;
@@ -760,6 +772,11 @@ color: aliceblue;
 height: auto;
 
 
+}
+.ulada {
+    text-align: center;
+    list-style: none;
+    display: inline-flex;
 }
 #wapper3 p {
     text-align: center;
@@ -818,6 +835,9 @@ border-radius: 15px;
 color: black;
 font-size: 58px;
 margin-top: 30px;
+}
+.three3 {
+    padding-top: 200px;
 }
 .three3 div {
 width: 80px;
@@ -1101,7 +1121,7 @@ footer {
                 border-radius: 10px;
             }
             .footerback{
-                background-image: url(balckgo.jpg);
+                background-image: url(lencois.jpg);
                 background-size: cover;
             }
                
