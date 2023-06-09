@@ -32,14 +32,22 @@
         border-radius: 99999999999990%;
         width: 90px;
         padding: 0px;
+        text-shadow:
+    -1px -1px 0 #000000,
+     1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+     1px 1px 0 #000000,
+    -2px -5px 0px #000000;
+       
         
     }
 
     .gif {
-        
+    
         width: 20%;
         height: auto;
         z-index: 10;
+        border: solid 4px black;
         border-radius: 55px;
     }
     .imagola {
