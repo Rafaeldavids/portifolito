@@ -572,7 +572,25 @@ justify-content: space-around;
 
 @media screen and (max-width: 650px) {
 
-
+#caixa div {
+    width: 60px;
+    height: 80px;
+    
+}
+#caixa2 div {
+    width: 60px;
+    height: 80px;
+    padding: 0px;
+    
+}
+#caixa3 div {
+    width: 60px;
+    height: 80px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 0px;
+    
+}
     *{
         transition: 1s;
     }
